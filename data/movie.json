@@ -1,11 +1,95 @@
 {
-  "type": "list",
-  "headline": "Movie Redirect",
-  "items": [
-    {
-      "title": "Play Movie",
-      "image": "https://img.freepik.com/free-photo/movie-background-collage_23-2149876017.jpg",
-      "action": "link:https://player.videasy.net/movie/299534"
-    }
-  ]
+   "compress": true,
+   "background": "https://static.tildacdn.com/tild6632-3233-4236-a166-613266623434/wallhaven-kw7pd7.png",
+   "type": "list",
+   "extension": "{col:msx-white}{ico:msx-white:event} {now:date:D, M d, yyyy}{tb}{ico:msx-white:access-time} {now:time:hh:mm}",
+   "dictionary": "https://v3rmies.github.io/msx/dictionary.json",
+   "headline": "Бесплатное кино",
+   "transparent": 1,
+   "preload": "next",
+   "underlay": {
+      "action": "[quiet|delay:backdrop:1:interaction:load:http://msx.benzac.de/interaction/backdrop.html]",
+      "data": {
+         "url": "none"
+      },
+      "items": [
+         {
+            "id": "text",
+            "type": "space",
+            "layout": "0,0,16,3",
+            "headline": "",
+            "text": ""
+         }
+      ]
+   },
+   "template": {
+      "type": "default",
+      "layout": "0,0,2,2",
+      "area": "0,2,16,6",
+      "wrapperColor": "msx-glass",
+      "imageHeight": 1.83,
+      "color": "msx-glass",
+      "imageFiller": "cover",
+      "truncation": "titleFooter",
+      "transparent": 1,
+      "titleHeader": "",
+      "titleFooter": "",
+      "description": "No description available.",
+      "backdrop": "none",
+      "image": "none",
+      "selection": {
+         "important": true,
+         "action": "data",
+         "data": {
+            "actions": [
+               {
+                  "action": "invalidate:content:underlay:text"
+               },
+               {
+                  "action": "delay:text:0:update:content:underlay:text",
+                  "data": {
+                     "headline": "{context:titleHeader}",
+                     "text": "{context:titleFooter}{context:description}"
+                  }
+               },
+               {
+                  "action": "delay:backdrop:0:interaction:load:http://msx.benzac.de/interaction/backdrop.html",
+                  "data": {
+                     "url": "{context:backdrop}",
+                     "type": 1
+                  }
+               }
+            ]
+         }
+      },
+      "properties": {
+         "image:extension": "| {context:titleHeader}"
+      }
+   },
+   "items": [
+      {
+         "selection": {
+            "important": true,
+            "action": "update:content:underlay:text",
+            "data": {
+               "headline": "Videasy",
+               "text": "Sigma 1"
+            }
+         },
+         "image": "https://wals09.github.io/msx/logon/lampa.png",
+         "action": "link:https://player.videasy.net/movie/299534"
+      },
+      {
+         "selection": {
+            "important": true,
+            "action": "update:content:underlay:text",
+            "data": {
+               "headline": "Vidsrc",
+               "text": "Sigma 2"
+            }
+         },
+         "image": "https://wals09.github.io/msx/logon/okko.png",
+         "action": "link:https://www.vidsrc.wtf/api/1/movie/?id=533535"
+      }
+   ]
 }
