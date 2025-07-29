@@ -1,12 +1,13 @@
 {
   "provider": "msx",
   "type": "menu",
-  "title": "Movie Station",
+  "title": "Main Menu",
+  "layout": "0",
   "items": [
     {
       "title": "Watch Movie",
       "image": "https://img.freepik.com/free-photo/movie-background-collage_23-2149876017.jpg",
-      "url": "https://v3rmies.github.io/msx/data/movie.json"
+      "url": "https://benzac-de.github.io/msx/data/movie.json"
     }
   ]
 }
