@@ -1,0 +1,12 @@
+{
+  "provider": "msx",
+  "type": "website",
+  "title": "Movie Player",
+  "items": [
+    {
+      "title": "Watch Now",
+      "image": "https://img.freepik.com/free-photo/movie-background-collage_23-2149876017.jpg",
+      "url": "https://player.videasy.net/movie/299534"
+    }
+  ]
+}
