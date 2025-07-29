@@ -1,13 +1,11 @@
 {
-  "provider": "msx",
   "type": "list",
-  "title": "Watch Movie",
+  "headline": "Movie Redirect",
   "items": [
     {
       "title": "Play Movie",
       "image": "https://img.freepik.com/free-photo/movie-background-collage_23-2149876017.jpg",
-      "type": "redirect",
-      "url": "https://player.videasy.net/movie/299534"
+      "action": "link:https://player.videasy.net/movie/299534"
     }
   ]
 }
