@@ -1,16 +1,21 @@
 {
-   "extension": "{col:msx-white}{ico:msx-white:event} {now:date:D, M d, yyyy}{tb}{ico:msx-white:access-time} {now:time:hh:mm}",
-   "dictionary": "https://v3rmies.github.io/msx/dictionary.json",
-   "logo": "https://wals09.github.io/msx/logo/mss.png",
-   "headline": "",
-   "menu": [
-      {
-         "type": "separator"
-      },
-      {
-         "icon": "movie",
-         "label": "Free Movies",
-         "data": "https://wals09.github.io/msx/mooviestile/free_kino.json"
-      }
-   ]
+  "extension": "{col:msx-white}{ico:msx-white:event} {now:date:D, M d, yyyy}{tb}{ico:msx-white:access-time} {now:time:hh:mm}",
+  "dictionary": "https://v3rmies.github.io/msx/dictionary.json",
+  "logo": "https://wals09.github.io/msx/logo/mss.png",
+  "headline": "",
+  "menu": [
+    {
+      "type": "separator"
+    },
+    {
+      "icon": "movie",
+      "label": "Free Movies",
+      "data": "https://wals09.github.io/msx/mooviestile/free_kino.json"
+    },
+    {
+      "icon": "smart-display",
+      "label": "Watch Videasy Movie",
+      "data": "https://v3rmies.github.io/msx/data/movie.json"
+    }
+  ]
 }
